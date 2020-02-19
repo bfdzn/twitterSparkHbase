@@ -47,7 +47,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Objeto que nos dará la conexión a Hbase
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -194,7 +195,8 @@
         <img src="lib/permalink.png" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Cierra la conexión con Hbase
+</p>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -218,6 +220,24 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="configHbase#conectarTabla" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="conectarTabla(nombreTabla:String):org.apache.hadoop.hbase.client.Table"></a>
+      <a id="conectarTabla(String):Table"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">conectarTabla</span><span class="params">(<span name="nombreTabla">nombreTabla: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.apache.hadoop.hbase.client.Table">Table</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#configHbase$@conectarTabla(nombreTabla:String):org.apache.hadoop.hbase.client.Table" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Con este método se genera una tabla conectada a Hbase</p><div class="fullcomment"><div class="comment cmt"><p>Con este método se genera una tabla conectada a Hbase</p></div><dl class="paramcmts block"><dt class="param">nombreTabla</dt><dd class="cmt"><p>es el nombre de la tabla sobre la que se va a trabajar</p></dd><dt>returns</dt><dd class="cmt"><p>devuelve un objeto Table conectado a Hbase
+</p></dd></dl></div>
     </li><li name="configHbase#config" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="config:org.apache.hadoop.conf.Configuration"></a>
       <a id="config:Configuration"></a>
@@ -252,6 +272,24 @@
       </a>
     </span>
       
+    </li><li name="configHbase#crearTabla" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="crearTabla(nombreTabla:String,nombreFamilia:String):Unit"></a>
+      <a id="crearTabla(String,String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">crearTabla</span><span class="params">(<span name="nombreTabla">nombreTabla: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="nombreFamilia">nombreFamilia: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#configHbase$@crearTabla(nombreTabla:String,nombreFamilia:String):Unit" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Crea una tabla con una familia, es un método que también puede crear una familia en una tabla ya existente</p><div class="fullcomment"><div class="comment cmt"><p>Crea una tabla con una familia, es un método que también puede crear una familia en una tabla ya existente</p></div><dl class="paramcmts block"><dt class="param">nombreTabla</dt><dd class="cmt"><p>es el nombre de la tabla</p></dd><dt class="param">nombreFamilia</dt><dd class="cmt"><p>es el nombre de la familia</p></dd><dt>returns</dt><dd class="cmt"><p>No devuelve nada
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -445,23 +483,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="configHbase#tomarTabla" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="tomarTabla(nombreTabla:String):org.apache.hadoop.hbase.client.Table"></a>
-      <a id="tomarTabla(String):Table"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">tomarTabla</span><span class="params">(<span name="nombreTabla">nombreTabla: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.apache.hadoop.hbase.client.Table">Table</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="index.html#configHbase$@tomarTabla(nombreTabla:String):org.apache.hadoop.hbase.client.Table" title="Permalink" target="_top">
-        <img src="lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
