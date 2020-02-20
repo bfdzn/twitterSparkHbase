@@ -1,4 +1,8 @@
-[0m[[0m[0mdebug[0m] [0m[0mdownloaded https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.11/2.4.5/spark-streaming-twitter_2.11-2.4.5.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0mdownloaded https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.11/2.4.5/spark-streaming-twitter_2.11-2.4.5.pom.sha1[0m
-[0m[[0m[0mdebug[0m] [0m[0mdownloaded https://repository.apache.org/content/repositories/releases/org/apache/spark/spark-streaming-twitter_2.11/2.4.5/spark-streaming-twitter_2.11-2.4.5.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0mdownloaded https://repository.apache.org/content/repositories/releases/org/apache/spark/spark-streaming-twitter_2.11/2.4.5/spark-streaming-twitter_2.11-2.4.5.pom.sha1[0m
+[debug] downloaded https://repo1.maven.org/maven2/org/mongodb/spark/mongo-spark-connector_2.11/2.2.1/mongo-spark-connector_2.11-2.2.1.pom
+[debug] downloaded https://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/3.4.2/mongo-java-driver-3.4.2.pom
+[debug] downloaded https://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/3.4.2/mongo-java-driver-3.4.2.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/mongodb/spark/mongo-spark-connector_2.11/2.2.1/mongo-spark-connector_2.11-2.2.1.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/3.4.2/mongo-java-driver-3.4.2-javadoc.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/mongodb/spark/mongo-spark-connector_2.11/2.2.1/mongo-spark-connector_2.11-2.2.1-sources.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/mongodb/spark/mongo-spark-connector_2.11/2.2.1/mongo-spark-connector_2.11-2.2.1-javadoc.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/3.4.2/mongo-java-driver-3.4.2-sources.jar

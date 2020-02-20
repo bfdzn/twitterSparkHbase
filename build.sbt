@@ -7,6 +7,7 @@ scalaVersion := "2.11.1"
 val sparkVersion = "2.2.1"
 
 libraryDependencies ++= Seq(
+  "org.mongodb.spark" %% "mongo-spark-connector" % sparkVersion,
   "org.apache.spark" %% "spark-core" % sparkVersion,
   "org.apache.spark" %% "spark-sql" % sparkVersion,
   "org.apache.spark" %% "spark-streaming" % sparkVersion,

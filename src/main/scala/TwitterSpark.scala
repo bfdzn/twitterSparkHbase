@@ -94,7 +94,7 @@ object TwitterSpark {
     val nombreTabla = "tweets"
 
     //Generamos en Hbase una tabla con la familia seleccionada. Es importante llamar a este método antes de generar el Stream
-    configHbase.crearTabla(nombreTabla,familia)
+    //configHbase.crearTabla(nombreTabla,familia)
 
     //Se genera un Stream gracias a TwitterUtils, recoge el id, texto, lenguaje y fecha del tweet
     val tweets = TwitterUtils
@@ -103,7 +103,7 @@ object TwitterSpark {
 
     //Por cada tweet se llama al método appendRow que guarda el tweet en Hbase
     statues.foreachRDD(rdd => rdd.foreach{x =>
-      appendRow(x.head, familia, nombreTabla, header, x.tail)
+      //appendRow(x.head, familia, nombreTabla, header, x.tail)
       println(x.mkString(" "))
     })
     //Empieza el stream
