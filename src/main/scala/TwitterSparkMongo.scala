@@ -26,7 +26,7 @@ object TwitterSparkMongo {
     val statues = tweets.map(status => Array(status.getId().toString, status.getText().replace("'","").replace("\"",""), status.getLang(), status.getCreatedAt().toString))
 
     statues.foreachRDD{ rdd =>
-      val x = rdd.map( x => Document.parse(s"{id_tweet: '${x(0)}',texto: '${x(1)}',lang:'${x(2)}',time:'${x(3)}'}'"))
+      val x = rdd.map( x => Document.parse(s"{id_tweet: '${x(0)}',texto: '${x(1)}',lang:'${x(2)}',time:'${twitterConnection.dateToString(twitterConnection.parseTime(x(3)))}'}'"))
       x.foreach(x => println(x))
       MongoSpark.save(x)
     }

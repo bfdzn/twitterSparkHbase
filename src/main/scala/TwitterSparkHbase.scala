@@ -89,7 +89,7 @@ object TwitterSpark {
     //Se genera un Stream gracias a TwitterUtils, recoge el id, texto, lenguaje y fecha del tweet
     val tweets = TwitterUtils
       .createStream(ssc, atwitter, filters, StorageLevel.MEMORY_AND_DISK_SER)
-    val statues = tweets.map(status => Array(status.getId().toString, status.getText(), status.getLang(), status.getCreatedAt().toString))
+    val statues = tweets.map(status => Array(status.getId().toString, status.getText(), status.getLang(), twitterConnection.dateToString(twitterConnection.parseTime(status.getCreatedAt().toString))))
 
     //Por cada tweet se llama al método appendRow que guarda el tweet en Hbase
     statues.foreachRDD(rdd => rdd.foreach{x =>

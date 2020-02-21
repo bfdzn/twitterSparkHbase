@@ -1,4 +1,5 @@
-import java.util.Properties
+import java.text.SimpleDateFormat
+import java.util.{Date, Locale, Properties}
 
 import twitter4j.TwitterFactory
 import twitter4j.auth.OAuthAuthorization
@@ -37,5 +38,16 @@ case class TwitterConnection(){
       ("AccessToken", properties.getProperty("AccessToken")),
       ("AccessTokenSecret", properties.getProperty("AccessTokenSecret"))
     )
+  }
+  def parseTime(date : String) : Date = {
+    val twitter = "EEE MMM dd HH:mm:ss ZZZ yyyy"
+    val sf : SimpleDateFormat = new SimpleDateFormat(twitter, Locale.ENGLISH)
+    sf.setLenient(true);
+    sf.parse(date)
+
+  }
+  def dateToString(date : Date) : String = {
+    val formatter : SimpleDateFormat = new SimpleDateFormat("dd-M-yyyy HH:mm:ss")
+    formatter.format(date)
   }
 }
